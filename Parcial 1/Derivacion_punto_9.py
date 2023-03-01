@@ -43,8 +43,15 @@ def GetCoefficients(x,p,X):
 print(GetCoefficients(x,2,X))
 
 """
-I) El orden de aproximacion para la dreivada progresiva, calculada con 
-    El polinomio interploacion de lagrange de n+1 puntos, es de orden n.
+I) El error de interpolacion del polinomio es dado por
+    E= dfn+1/dx^n+1 (ξx)(n + 1)! (x − x0)(x − x1)...(x − xn), siendo n el grado polinomial.
+    El error seria de grado n+1 para el polinomio de interpolacion de grado n
+    
+    El orden de aproximacion para la derivada progresiva, calculada con 
+    El polinomio interploacion de lagrange de n+1 puntos, es de orden n,
+    ya que la derivada de orden n+1 se anularia
+    
+    
     En el ejercicio se toman 5 puntos, por lo que la aproximacion es de orden 4
     
     """
