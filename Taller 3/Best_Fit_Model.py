@@ -75,7 +75,7 @@ Parameters=GetSolve(Cost_Function,[1,1,1])
 
 x_=np.linspace(-10, 10,100)
 print(Parameters)
-plt.scatter(X,Y,label="Data",c="r")
+plt.scatter(X,Y,s=15,label="Data",c="r")
 plt.plot(x_,Model(Parameters,x_),label="Best fit model",c="k")
 plt.legend()
 

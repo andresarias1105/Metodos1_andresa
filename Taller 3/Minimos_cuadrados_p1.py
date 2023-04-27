@@ -5,19 +5,19 @@ from tqdm import tqdm
 
 
 def GetSol(A,b):
-    
-    AT=np.dot(A.T,A)
-    BT=np.dot(A.T,b)
+    A_=A.T
+    AT=np.dot(A_,A)
+    BT=np.dot(A_,b)
     
     sol=np.linalg.solve(AT,BT)
     
     return sol
 
-A = np.array([[2,-1],[1.,2.],[1,1]])
+A = np.array([[2.,-1.],[1.,2.],[1.,1.]])
 b = np.array([2.,1.,4.])
 def GetY(A,b,x,i):
     return (b[i]-A[i,0]*x/A[i,1])
-x = np.linspace(-5,7,10)
+x = np.linspace(-10,10,50)
 
 fig = plt.figure()
 ax = fig.add_subplot(111)
