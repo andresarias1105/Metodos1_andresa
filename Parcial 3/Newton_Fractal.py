@@ -69,7 +69,7 @@ print(Root)
 
 ##I
 
-N=1000
+N=300
 
 x_= np.linspace(-1, 1, N)
 y_= np.linspace(-1, 1, N)
